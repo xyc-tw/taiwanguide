@@ -1,0 +1,213 @@
+/* https://fonts.google.com/specimen/Montserrat */
+@font-face {
+  font-family: "LeagueSpartan";
+  font-style: normal;
+  font-weight: normal;
+  src: local("LeagueSpartan"),
+    url("../../fonts/LeagueSpartan-Medium.ttf") format("truetype");
+}
+
+/* fullscreen background */
+.container::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+  z-index: -2;
+  background-image: url(./cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* adjust the space between title and area of input */
+h1 {
+  margin-bottom: 8px;
+}
+
+/* opaque background under form area*/
+.container {
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 1px 1px 12px var(--color-gray-light);
+  margin: 20px;
+  padding: 30px 25px;
+  max-width: 550px;
+  border-radius: 15px;
+
+  /* here begin the font setup except button */
+  font-family: "LeagueSpartan", sans-serif;
+  color: var(--color-gray-heavy);
+}
+
+/* font for the item title */
+form label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 170px;
+  padding: 4px 0 0 4px;
+  text-align: left;
+}
+
+/* font for radio and checkbox */
+.radios,
+.checks {
+  position: relative;
+  padding-left: 21px;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-right: 10px;
+}
+
+/* star mark for the required items */
+.required:after {
+  content: " *";
+  color: var(--color-red);
+}
+
+/* ---------------------- */
+/* --- flex containers--- */
+/* flex container for items */
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* flex container for title and input */
+.item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* flex container for radio and checkbox */
+.multi {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  gap: 4px;
+}
+
+.markContainer {
+  position: relative;
+}
+
+/* ---------------------------------- */
+/* --- style and resize the input --- */
+
+input {
+  height: 22px;
+  margin-top: 5px;
+  /* align to label  */
+}
+
+input,
+textarea {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  box-shadow: 1px 1px 4px var(--color-gray-light);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--color-focus-light);
+  border-color: var(--color-red);
+}
+
+/* Hide the default checkbox and radio*/
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* checkbox and radio style */
+.radiomark,
+.checkmark {
+  margin-top: 1px;
+  /* align to label */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--color-gray-light);
+}
+
+.radiomark {
+  border-radius: 50%;
+}
+
+/* color changed when hover */
+.markContainer:hover input ~ .radiomark,
+.markContainer:hover input ~ .checkmark {
+  background-color: var(--color-gray-middle);
+}
+
+/* add a background-color when checked */
+.markContainer input:checked ~ .radiomark,
+.markContainer input:checked ~ .checkmark {
+  background-color: var(--color-focus);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 170px);
+  padding: 8px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+input[type="date"] {
+  width: 140px;
+}
+
+textarea {
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+/* -------------------- */
+/* --- button setup --- */
+input[type="button"] {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  margin: 0 20px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: var(--color-focus);
+  color: var(--color-white);
+}
+
+input[type="button"]:hover {
+  opacity: 0.8;
+}
+
+input[type="button"]:active {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    flex-direction: column;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+}

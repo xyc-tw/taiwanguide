@@ -1,0 +1,50 @@
+#gallery {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 5px;
+}
+
+/* each column contains 5 pics and one half block */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column img {
+  margin: 0;
+  padding: 2.5px 0;
+  width: 100%;
+  height: calc((100%-25px) / 11 * 2);
+  object-fit: cover;
+}
+
+.column .block {
+  background-color: var(--color-focus-middle);
+  width: 100%;
+  margin: 2.5px 0;
+  height: calc((100%-20px) / 11);
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 49%;
+    max-width: 50%;
+  }
+}
+
+/* show only two rows when schrink */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

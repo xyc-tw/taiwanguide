@@ -1,0 +1,36 @@
+/* slogan */
+/* https://www.fontspace.com/smoke-attack-font-f40703 */
+@font-face {
+  font-family: "SmokeAttack";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SmokeAttack"),
+    url("../../fonts/SmokeAttack.ttf") format("truetype");
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* to align slogan in middle */
+.header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  width: 95vw;
+  font-family: "SmokeAttack", sans-serif;
+  color: var(--color-white);
+  font-size: calc(120px + 12vw);
+  line-height: calc(120px + 10vw);
+}

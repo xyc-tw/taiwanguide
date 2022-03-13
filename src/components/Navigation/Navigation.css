@@ -1,0 +1,146 @@
+/* base layer of Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* input and hambuger: the same position , size */
+nav input[type="checkbox"],
+nav #hamburger {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+nav input[type="checkbox"] {
+  cursor: pointer;
+  z-index: 3; /* always on top */
+  opacity: 0; /* unvisable */
+}
+
+nav #hamburger {
+  z-index: 2;
+
+  background-color: var(--color-focus);
+  padding: 0.5rem;
+
+  /* container for hamburger lines */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* three white lines */
+nav #hamburger > div {
+  /* middle line */
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-white);
+
+  /* container for sudo class */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* transform when checked | when hovered */
+  transition: all 0.2s ease-in-out;
+}
+
+/* up and bitton line */
+nav #hamburger > div::before,
+nav #hamburger > div::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+}
+/* position of top line */
+nav #hamburger > div::after {
+  top: 11px;
+}
+
+/* transform when checked*/
+/* top-line move to center and rotate to vertical (180+90deg)*/
+nav input[type="checkbox"]:checked + #hamburger > div::before {
+  top: 0;
+  transform: rotate(270deg);
+}
+
+/* buttom-line hidden */
+nav input[type="checkbox"]:checked + #hamburger > div::after {
+  opacity: 0;
+}
+
+/* cross rotate to cross-form */
+nav input[type="checkbox"]:checked + #hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* rotate when the cross is hovered */
+nav input[type="checkbox"]:checked:hover + #hamburger > div {
+  transform: rotate(855deg); /* 135 + 360*2 = 855 */
+}
+
+/* how side menu ,bg-color, hidden */
+nav #menu {
+  background-color: var(--color-focus-light);
+  position: absolute;
+  top: 0;
+  left: -60vw;
+  min-width: 300px;
+  width: 30vw;
+  height: 100vh;
+
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  /* visable when checked */
+
+  /* container for whole list, to put list in middle */
+  display: flex;
+}
+
+nav input[type="checkbox"]:checked ~ #menu {
+  left: 0;
+  visibility: visible;
+}
+
+nav #menu > ul {
+  width: 100%;
+
+  /* container for list item in column*/
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+nav #menu > ul li {
+  list-style: none;
+
+  display: flex;
+}
+
+nav #menu > ul li a {
+  width: 100%;
+  color: var(--color-focus);
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* change color when hover */
+nav #menu > ul li a:hover,
+nav #menu > ul li a:active {
+  color: var(--color-white);
+  background-color: var(--color-focus);
+}
