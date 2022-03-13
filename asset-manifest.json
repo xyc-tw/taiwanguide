@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/taiwanguide/static/css/main.a96d212c.css",
+    "main.js": "/taiwanguide/static/js/main.96faea84.js",
+    "static/js/787.feb44fac.chunk.js": "/taiwanguide/static/js/787.feb44fac.chunk.js",
+    "static/media/cover.mov": "/taiwanguide/static/media/cover.174dfc5d3be99329138a.mov",
+    "static/media/SmokeAttack.ttf": "/taiwanguide/static/media/SmokeAttack.712c7a09371133467176.ttf",
+    "static/media/Caveat-Regular.ttf": "/taiwanguide/static/media/Caveat-Regular.ff4921b17fd01391c043.ttf",
+    "static/media/cover.jpeg": "/taiwanguide/static/media/cover.43eb226f835789945f31.jpeg",
+    "static/media/shia.jpeg": "/taiwanguide/static/media/shia.675b9a4e6a7489d01a96.jpeg",
+    "static/media/Lovely_Yollandy.otf": "/taiwanguide/static/media/Lovely_Yollandy.e7ccc932b32d40dd2ed9.otf",
+    "static/media/jaxine.jpeg": "/taiwanguide/static/media/jaxine.6ed8a4be803045fae151.jpeg",
+    "static/media/LeagueSpartan-Medium.ttf": "/taiwanguide/static/media/LeagueSpartan-Medium.dc1ec5ac96bc6564fea9.ttf",
+    "static/media/hsinyu.jpeg": "/taiwanguide/static/media/hsinyu.4273fd2ee4de463248e8.jpeg",
+    "index.html": "/taiwanguide/index.html",
+    "main.a96d212c.css.map": "/taiwanguide/static/css/main.a96d212c.css.map",
+    "main.96faea84.js.map": "/taiwanguide/static/js/main.96faea84.js.map",
+    "787.feb44fac.chunk.js.map": "/taiwanguide/static/js/787.feb44fac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a96d212c.css",
+    "static/js/main.96faea84.js"
+  ]
+}
