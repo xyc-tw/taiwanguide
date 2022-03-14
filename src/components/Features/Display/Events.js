@@ -47,7 +47,7 @@ const Events = ({ clickPhoto }) => {
       </div>
       <div
         className="panel"
-        style={{ backgroundImage: `url(${gayparade})` }}
+        style={{ backgroundImage: `url(${pilgrimage})` }}
         onClick={(e) => clickPhoto(e)}
       >
         <h3>Pilgrimage</h3>
@@ -65,7 +65,7 @@ const Events = ({ clickPhoto }) => {
       <div
         className="panel"
         style={{
-          backgroundImage: `url(${lunarnewyear})`,
+          backgroundImage: `url(${gayparade})`,
         }}
         onClick={(e) => clickPhoto(e)}
       >
