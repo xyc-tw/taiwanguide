@@ -7,7 +7,7 @@ import backgroundVideo from "./cover.mov";
 const Cover = () => {
   return (
     <div>
-      <div className="video-container" id="home">
+      <div id="home">
         <video loop autoPlay muted id="video">
           <source src={backgroundVideo} type="video/mp4" />
           Your browser does not support the video tag.

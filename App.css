@@ -38,17 +38,12 @@
 }
 
 .App {
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-}
-
-#video {
-  z-index: -1;
-  width: 100%;
-  height: auto;
 }
 
 h1 {

@@ -16,7 +16,7 @@ const Features = ({ activeTopic, changeTopic, clickPhoto }) => {
           Culture
         </p>
         <p className="topic" value="nature" onClick={(e) => changeTopic(e)}>
-          Nature & Outdoor
+          Nature
         </p>
         <p className="topic" value="life" onClick={(e) => changeTopic(e)}>
           Life
