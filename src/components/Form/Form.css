@@ -186,7 +186,7 @@ input[type="button"] {
   font-weight: bold;
   width: 120px;
   height: 35px;
-  margin: 0 20px;
+  margin: 0 20px 5px 20px;
   border-style: none;
   border-radius: 8px;
   background-color: var(--color-focus);
