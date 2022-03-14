@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taiwanguide/static/css/main.b47aa465.css",
-    "main.js": "/taiwanguide/static/js/main.ae11dd6b.js",
+    "main.css": "/taiwanguide/static/css/main.9aeef7e0.css",
+    "main.js": "/taiwanguide/static/js/main.67de92a3.js",
     "static/js/787.feb44fac.chunk.js": "/taiwanguide/static/js/787.feb44fac.chunk.js",
     "static/media/cover.mov": "/taiwanguide/static/media/cover.174dfc5d3be99329138a.mov",
     "static/media/beehive_firecrackers.jpeg": "/taiwanguide/static/media/beehive_firecrackers.c90b6541eecbdcc6b3b0.jpeg",
@@ -46,12 +46,12 @@
     "static/media/hsinyu.jpeg": "/taiwanguide/static/media/hsinyu.4273fd2ee4de463248e8.jpeg",
     "static/media/footmassage.jpeg": "/taiwanguide/static/media/footmassage.2ae62f266e7e506c151e.jpeg",
     "index.html": "/taiwanguide/index.html",
-    "main.b47aa465.css.map": "/taiwanguide/static/css/main.b47aa465.css.map",
-    "main.ae11dd6b.js.map": "/taiwanguide/static/js/main.ae11dd6b.js.map",
+    "main.9aeef7e0.css.map": "/taiwanguide/static/css/main.9aeef7e0.css.map",
+    "main.67de92a3.js.map": "/taiwanguide/static/js/main.67de92a3.js.map",
     "787.feb44fac.chunk.js.map": "/taiwanguide/static/js/787.feb44fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b47aa465.css",
-    "static/js/main.ae11dd6b.js"
+    "static/css/main.9aeef7e0.css",
+    "static/js/main.67de92a3.js"
   ]
 }
