@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/taiwanguide/static/css/main.9aeef7e0.css",
+    "main.css": "/taiwanguide/static/css/main.b21cdc26.css",
     "main.js": "/taiwanguide/static/js/main.67de92a3.js",
     "static/js/787.feb44fac.chunk.js": "/taiwanguide/static/js/787.feb44fac.chunk.js",
     "static/media/cover.mov": "/taiwanguide/static/media/cover.174dfc5d3be99329138a.mov",
@@ -46,12 +46,12 @@
     "static/media/hsinyu.jpeg": "/taiwanguide/static/media/hsinyu.4273fd2ee4de463248e8.jpeg",
     "static/media/footmassage.jpeg": "/taiwanguide/static/media/footmassage.2ae62f266e7e506c151e.jpeg",
     "index.html": "/taiwanguide/index.html",
-    "main.9aeef7e0.css.map": "/taiwanguide/static/css/main.9aeef7e0.css.map",
+    "main.b21cdc26.css.map": "/taiwanguide/static/css/main.b21cdc26.css.map",
     "main.67de92a3.js.map": "/taiwanguide/static/js/main.67de92a3.js.map",
     "787.feb44fac.chunk.js.map": "/taiwanguide/static/js/787.feb44fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aeef7e0.css",
+    "static/css/main.b21cdc26.css",
     "static/js/main.67de92a3.js"
   ]
 }
