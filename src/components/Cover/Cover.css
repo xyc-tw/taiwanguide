@@ -8,10 +8,6 @@
     url("../../fonts/SmokeAttack.ttf") format("truetype");
 }
 
-.videocontainer {
-  width: 100vw;
-}
-
 video {
   width: 100vw;
   height: 100vh;

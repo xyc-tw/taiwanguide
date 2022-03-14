@@ -20,10 +20,11 @@
 }
 
 .column img {
-  margin: 0;
+  /* margin: 0; */
+  /* padding: 2.5px 0; */
   padding: 2.5px 0;
   width: 100%;
-  height: calc((100%-25px) / 11 * 2);
+  height: calc((100%-30px) / 11 * 2);
   object-fit: cover;
 }
 
